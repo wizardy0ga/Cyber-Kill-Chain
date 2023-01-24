@@ -17,3 +17,7 @@ Recon is the first stage in the cyber kill chain model. During this stage, the a
 # Weaponization
 
 This is the second phase of the kill chain. When the attacker has found an actionable vulnerability, their next goal will be coupling the vulnerability with an exploit that executes a piece of malware on the target host. This process is called weaponization and during this time, the attacker will be focused on engineering their malware into a deliverable payload that will evade known security mechanisms and perform the functions that the attacker seeks to execute on the target computer. More or less time will be spent researching, acquiring and configuring available malware or developing ones own malware depending on the needs and sophistication of the attacker. When the final payload is ready for delivery to the target, the attacker moves into the delivery phase. 
+
+# Delivery
+
+The delivery phase is the stage of an attack where the adversary attempts to pass their weaponized payload on the target machine. Delivery of the malware depends on the TTP's of the adversary. Typically, malware is delivered through phishing since the human is most vulnerable to exploitation. Malware may also be delivered through remote exploitation of vulnerable internet facing devices or through physical means such as keystroke injectors and other malicious physical media. Once the payload has been delivered to the target, the attack moves into the fourth phase of the kill chain. 
