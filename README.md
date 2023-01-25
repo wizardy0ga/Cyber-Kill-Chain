@@ -12,7 +12,7 @@ The cyber kill chain is an intrusion model developed by Lockheed Martin in 2011,
 
 # Reconnaissance
 
-Recon is the first stage in the cyber kill chain model. During this stage, the attacker will enumerate their target both passively and actively with the goal of collecting as much information about the target organization as possible. In active recon, the attacker will make contact with with their target through various ways such as portscanning internet facing devices or contacting the organization. In passive recon, the attacker relies entirely on OSINT to collect information about their target rather than what the data the collected from ineracting with the target. When the attacker feels that an actionable vulnerability has been found, they will move into the second phase of the kill chain.
+Recon is the first stage in the cyber kill chain model. During this stage, the attacker will enumerate their target either passively or actively with the goal of collecting as much information about the target organization as possible. In active recon, the attacker will make contact with their target through various methods such as port scanning internet facing devices or contacting the organization. In passive recon, the attacker makes no contact with the target and relies entirely on OSINT to collect information about their target. When the attacker feels that an actionable vulnerability has been found, they will move into the second phase of the kill chain.
 
 # Weaponization
 
@@ -28,7 +28,13 @@ The fourth phase of the kill chain is exploitation. During this phase, the attac
 
 # Installation
 
-During the installation phase, the attacker will install a persistent backdoor to ensure that they remain inside the network. The attackers may also pack in other tools to aid accomplishing their objectives. When the attackers have finished the installation and configuration of their post exploitation tooling, they will move into the sixth phase of the kill chain, Command and Control.
+During the installation phase, the attacker will install a persistent backdoor to ensure that they remain inside the network. The attackers may also pack in other tools to aid accomplishing their objectives. When the attackers have finished the installation and configuration of their post exploitation tooling, they will move into the sixth phase of the kill chain, command and control.
 
 # Command and Control
+
+In the command and control phase, the attacker will establish a connection between their newly installed implants and CnC servers. This connection allows the attackers to remotely control the infected machines via communications from the server over the command channel to the implant on the machine. It is through this communication channel that the attacker will move into the seventh and final stage of the attack, actions on objectives.
+
+# Actions on Objectives
+
+This is the final phase of the cyberattack. The attacker will now have enough control over the network to accomplish their initial goals that motivated them to compromise the network. Utilizing the command and control communication channel between the attackers server and the implanted host machines, the attacker will be able to perform various actions such as data exfiltration, DDoS attacks, extortion or other malicious activities. 
 
