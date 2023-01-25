@@ -20,4 +20,15 @@ This is the second phase of the kill chain. When the attacker has found an actio
 
 # Delivery
 
-The delivery phase is the stage of an attack where the adversary attempts to pass their weaponized payload on the target machine. Delivery of the malware depends on the TTP's of the adversary. Typically, malware is delivered through phishing since the human is most vulnerable to exploitation. Malware may also be delivered through remote exploitation of vulnerable internet facing devices or through physical means such as keystroke injectors and other malicious physical media. Once the payload has been delivered to the target, the attack moves into the fourth phase of the kill chain. 
+The delivery phase is the stage of an attack where the adversary attempts to pass their weaponized payload on to the target machine. Delivery of the payload depends on the TTP's of the adversary. Typically, the payload is delivered through phishing since the human is most vulnerable to exploitation. The payload may also be delivered through remote exploitation of vulnerable internet facing devices or through physical means such as keystroke injectors and other malicious physical media. Once the payload has been delivered to the target, the attack moves into the fourth phase of the kill chain.
+
+# Exploitation
+
+The fourth phase of the kill chain is exploitation. During this phase, the attacker will now exploit the vulnerabilities discovered during reconnaissance, with the weaponized payload that has been delivered to the target host. The goal of exploitation is to gain an initial foothold into the network. Once the attacker has this foothold, they will proceed to enumerate the network's interior, searching for further vulnerabilities to exploit that are not reachable from the network perimeter. This often results in lateral movement and privilege escalation. When the attacker has assumed enough privilege within the network, they will move into the installation phase.
+
+# Installation
+
+During the installation phase, the attacker will install a persistent backdoor to ensure that they remain inside the network. The attackers may also pack in other tools to aid accomplishing their objectives. When the attackers have finished the installation and configuration of their post exploitation tooling, they will move into the sixth phase of the kill chain, Command and Control.
+
+# Command and Control
+
